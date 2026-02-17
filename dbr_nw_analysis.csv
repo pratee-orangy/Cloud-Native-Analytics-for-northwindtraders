@@ -1,0 +1,21 @@
+orderID,orderDate,order_year,order_month,customerID,companyName,country,city,productID,productName,categoryName,quantity,unitPrice,discount,line_total_gross,line_total_net,freight,days_to_ship
+11077,06-05-2015,2015,5,RATTC,Rattlesnake Canyon Grocery,USA,Albuquerque,14,Tofu,Produce,1,23.25,0.03,23.25,22.55,8.53,null
+11077,06-05-2015,2015,5,RATTC,Rattlesnake Canyon Grocery,USA,Albuquerque,8,Northwoods Cranberry Sauce,Condiments,2,40,0.1,80,72,8.53,null
+11076,06-05-2015,2015,5,BONAP,Bon app',France,Marseille,14,Tofu,Produce,20,23.25,0.25,465,348.75,38.28,null
+11076,06-05-2015,2015,5,BONAP,Bon app',France,Marseille,19,Teatime Chocolate Biscuits,Confections,10,9.2,0.25,92,69,38.28,null
+11074,06-05-2015,2015,5,SIMOB,Simons bistro,Denmark,Kobenhavn,16,Pavlova,Confections,14,17.45,0.05,244.3,232.08,18.44,null
+11077,06-05-2015,2015,5,RATTC,Rattlesnake Canyon Grocery,USA,Albuquerque,4,Chef Anton's Cajun Seasoning,Condiments,1,22,0,22,22,8.53,null
+11075,06-05-2015,2015,5,RICSU,Richter Supermarkt,Switzerland,Gen�ve,46,Spegesild,Seafood,30,12,0.15,360,306,6.19,null
+11076,06-05-2015,2015,5,BONAP,Bon app',France,Marseille,6,Grandma's Boysenberry Spread,Condiments,20,25,0.25,500,375,38.28,null
+11077,06-05-2015,2015,5,RATTC,Rattlesnake Canyon Grocery,USA,Albuquerque,16,Pavlova,Confections,2,17.45,0.03,34.9,33.85,8.53,null
+11077,06-05-2015,2015,5,RATTC,Rattlesnake Canyon Grocery,USA,Albuquerque,2,Chang,Beverages,24,19,0.2,456,364.8,8.53,null
+11077,06-05-2015,2015,5,RATTC,Rattlesnake Canyon Grocery,USA,Albuquerque,12,Queso Manchego La Pastora,Dairy Products,2,38,0.05,76,72.2,8.53,null
+11077,06-05-2015,2015,5,RATTC,Rattlesnake Canyon Grocery,USA,Albuquerque,10,Ikura,Seafood,1,31,0,31,31,8.53,null
+11077,06-05-2015,2015,5,RATTC,Rattlesnake Canyon Grocery,USA,Albuquerque,7,Uncle Bob's Organic Dried Pears,Produce,1,30,0.05,30,28.5,8.53,null
+11077,06-05-2015,2015,5,RATTC,Rattlesnake Canyon Grocery,USA,Albuquerque,6,Grandma's Boysenberry Spread,Condiments,1,25,0.02,25,24.5,8.53,null
+11077,06-05-2015,2015,5,RATTC,Rattlesnake Canyon Grocery,USA,Albuquerque,13,Konbu,Seafood,4,6,0,24,24,8.53,null
+11075,06-05-2015,2015,5,RICSU,Richter Supermarkt,Switzerland,Gen�ve,76,Lakkalik�ri,Beverages,2,18,0.15,36,30.6,6.19,null
+11077,06-05-2015,2015,5,RATTC,Rattlesnake Canyon Grocery,USA,Albuquerque,20,Sir Rodney's Marmalade,Confections,1,81,0.04,81,77.76,8.53,null
+11075,06-05-2015,2015,5,RICSU,Richter Supermarkt,Switzerland,Gen�ve,2,Chang,Beverages,10,19,0.15,190,161.5,6.19,null
+11077,06-05-2015,2015,5,RATTC,Rattlesnake Canyon Grocery,USA,Albuquerque,3,Aniseed Syrup,Condiments,4,10,0,40,40,8.53,null
+11077,06-05-2015,2015,5,RATTC,Rattlesnake Canyon Grocery,USA,Albuquerque,23,Tunnbr�d,Grains & Cereals,2,9,0,18,18,8.53,null
