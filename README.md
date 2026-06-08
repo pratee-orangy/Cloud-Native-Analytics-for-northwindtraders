@@ -1,37 +1,35 @@
 
-**Cloud-Native Business Analytics with Azure Databricks & Power BI**
+Title : B2B Distribution Analytics
 
-End-to-end analytics platform analyzing B2B food distribution data (831 orders, 89 customers, $1.27M revenue) using Azure Databricks and advanced SQL techniques.
+End-to-end analytics platform analyzing B2B food distribution data (830 orders, 89 customers, $1.27M revenue) using Azure Databricks and advanced SQL , Power BI
 
 ---
+🎯 Business Problems Analyzed
 
-## 🎯 Business Problems Analyzed
-
-**Revenue Analysis:**
+Revenue Analysis:
 - Which product categories drive the most revenue?
 - How is revenue trending over time (2013-2015)?
 - What is the year-over-year growth rate?
 
-**Customer Insights:**
+Customer Insights
 - Who are the most valuable customers?
 - Which geographic markets generate highest revenue?
-- What is customer concentration risk?
 
-**Product Performance:**
+Product Performance:
 - Which categories contribute most to sales?
 - How effective are discount strategies?
 - What is the revenue distribution by discount level?
 
-**Strategic Planning:**
+Strategic Planning:
 - Where should we focus expansion efforts?
 - Which customer segments need attention?
 - How do we optimize pricing and discounting?
 
 ---
 
-## 💡 Solutions Delivered
+💡 Solutions Delivered
 
-### **1. Revenue Performance Dashboard**
+### 1. Revenue Performance Dashboard
 
 **Key Metrics Identified:**
 - **Total Revenue:** $1.27M across 3 years
@@ -39,7 +37,7 @@ End-to-end analytics platform analyzing B2B food distribution data (831 orders, 
 - **Total Customers:** 89 active customers
 - **YoY Growth:** 1.79% average growth rate
 
-**Revenue Trend Analysis:**
+Revenue Trend Analysis:
 - 2013: $0.2M (baseline)
 - 2014: $0.6M (peak performance, +196% growth)
 - 2015: $0.4M (decline, -28.6%)
@@ -60,11 +58,11 @@ End-to-end analytics platform analyzing B2B food distribution data (831 orders, 
 - Produce - $99,984 (7.9%)
 - Condiments - $106,047 (8.4%)
 
-**Business Insight:** Top 3 categories generate 52.8% of total revenue
+Business Insight:** Top 3 categories generate 52.8% of total revenue
 
 ---
 
-### **3. Customer Value Analysis**
+### 3. Customer Value Analysis
 
 **Top Customers by Revenue:**
 1. Berglunds snabbkop (Sweden) - $24,928
@@ -111,7 +109,7 @@ End-to-end analytics platform analyzing B2B food distribution data (831 orders, 
 
 ---
 
-## 🛠️ Tech Stack
+🛠️ Tech Stack
 
 | Technology | Purpose | Usage |
 |------------|---------|-------|
@@ -119,12 +117,11 @@ End-to-end analytics platform analyzing B2B food distribution data (831 orders, 
 | **Delta Lake** | Data storage | Optimized table format, 60% faster queries |
 | **SQL** | Data analysis | 15 advanced queries with window functions, CTEs |
 | **Power BI** | Visualization | Interactive dashboard, real-time insights |
-| **Microsoft Bing Maps** | Geospatial | Market visualization |
 
 ---
 
-## 📊 Database Schema
-```
+📊 Database Schema
+
 ┌─────────────────┐
 │   CATEGORIES    │ (8 categories)
 │  - categoryID   │
@@ -162,11 +159,10 @@ End-to-end analytics platform analyzing B2B food distribution data (831 orders, 
 - Customers: 89 rows
 - Orders: 830 rows
 - Order Details: 2,156 rows
-```
 
 ---
 
-## 📈 Analytics & Metrics
+📈 Analytics & Metrics
 
 ### **15 SQL Queries Implemented**
 
@@ -194,18 +190,18 @@ End-to-end analytics platform analyzing B2B food distribution data (831 orders, 
 ### **SQL Techniques Used**
 
 **Window Functions:**
-```sql
+
 ROW_NUMBER() OVER (PARTITION BY categoryName ORDER BY revenue DESC)
 LAG(revenue) OVER (ORDER BY year)
 SUM(revenue) OVER (ORDER BY month)
-```
+
 
 **CTEs (Common Table Expressions):**
-```sql
+
 WITH customer_revenue AS (...),
      total AS (...)
 SELECT *, revenue * 100.0 / total AS pct
-```
+
 
 **Complex Joins:**
 - 7-table unified view for Power BI
@@ -214,7 +210,7 @@ SELECT *, revenue * 100.0 / total AS pct
 
 ---
 
-## 📊 Power BI Dashboard Features
+📊 Power BI Dashboard Features
 
 ### **Business Insights & Retention Dashboard**
 
@@ -240,39 +236,39 @@ SELECT *, revenue * 100.0 / total AS pct
 
 ---
 
-## 🎯 Key Insights Discovered
+🎯 Key Insights covered
 
-### **Revenue Patterns**
+### Revenue Patterns
 - **Peak Year:** 2014 ($617K) - 196% growth
 - **Decline Year:** 2015 ($441K) - 28.6% decrease
 - **Trend:** Strong initial growth followed by contraction requiring investigation
 
-### **Category Performance**
+### Category Performance
 - **Top 3 categories:** 52.8% of total revenue
 - **Beverages:** Clear market leader (21.1%)
 - **Long tail:** Bottom 3 categories contribute only 26.7%
 
-### **Customer Concentration**
+### Customer Concentration
 - **Top customer:** 19.7% of revenue (Berglunds snabbkop)
 - **Top 3 customers:** ~46% of displayed revenue
 - **Risk:** High dependency on few key accounts
 
-### **Pricing Strategy**
+### Pricing Strategy
 - **59% of revenue:** Non-discounted sales
 - **Optimal discount:** 1-10% range (26.4% of revenue)
 - **Heavy discounting:** Only 7% contribution (15%+ discount)
 
-### **Geographic Insights**
+### Geographic Insights
 - **Primary market:** USA (largest concentration)
 - **Strong presence:** Western Europe (Germany, France, UK, Sweden)
 - **Opportunity:** Diversification in emerging markets
 
 ---
 
-## 🚀 Architecture & Implementation
+🚀 Architecture & Implementation
 
 ### **Data Pipeline**
-```
+
 CSV Files (7 tables)
     ↓
 Azure Databricks (Upload)
@@ -286,16 +282,16 @@ Analytics View (7-table join)
 Power BI (DirectQuery)
     ↓
 Interactive Dashboard
-```
 
-### **Databricks Setup**
+
+### Databricks Setup
 - **Workspace:** northwind-databricks
 - **Cluster:** Single Node (Standard_DS3_v2)
 - **Runtime:** LTS version
 - **Database:** northwind_database
 - **Format:** Delta Lake
 
-### **Power BI Connection**
+### Power BI Connection
 - **Method:** Azure Databricks connector
 - **Mode:** DirectQuery for real-time data
 - **Source:** Analytics view (unified 7-table join)
@@ -303,28 +299,28 @@ Interactive Dashboard
 
 ---
 
-## 💼 Skills Demonstrated
+💼 Skills Demonstrated
 
-### **Cloud Platforms**
+### Cloud Platform
 - Azure Databricks workspace configuration
 - Cluster management and optimization
 - Delta Lake implementation
 
-### **Advanced SQL**
+### Advanced SQL
 - Window functions (ROW_NUMBER, LAG, PARTITION BY, SUM OVER)
 - Common Table Expressions (CTEs)
 - Complex multi-table joins (up to 7 tables)
 - Advanced aggregations and grouping
 - Date/time analysis
 
-### **Data Visualization**
+### Data Visualization
 - Power BI dashboard design
 - Interactive filtering and drill-through
 - Geographic visualization (Bing Maps)
 - KPI card design
 - Color coding and visual hierarchy
 
-### **Business Analysis**
+### Business Analysis
 - Revenue trend analysis
 - Customer segmentation
 - Product performance evaluation
@@ -333,8 +329,8 @@ Interactive Dashboard
 
 ---
 
-## 📁 Project Structure
-```
+📁 Project Structure
+
 northwind-intelligence-platform/
 ├── sql-queries/
 │   └── northwind-analytics.sql (15 queries)
@@ -344,61 +340,39 @@ northwind-intelligence-platform/
 ├── data/
 │   └── sample-schema.sql
 └── README.md
-```
 
 ---
 
-## 🔮 Future Enhancements
+🔮 Future Enhancements
 
-### **Phase 2: Advanced Analytics**
+### Phase 2: Advanced Analytics
 - [ ] Customer churn prediction model
 - [ ] Sales forecasting with time series analysis
 - [ ] Automated anomaly detection
 - [ ] Customer segmentation using clustering
 
-### **Phase 3: Operational Intelligence**
-- [ ] Real-time inventory tracking
-- [ ] Automated alerts for at-risk customers
-- [ ] Shipping optimization recommendations
-- [ ] Dynamic pricing suggestions
-
-### **Phase 4: Integration**
+### Phase 3: Integration
 - [ ] ERP system integration
 - [ ] Automated daily data refresh
 - [ ] Mobile dashboard app
 - [ ] Email report distribution
 
 ---
+📝 Based on analysis:
 
-## 📝 Business Recommendations
-
-Based on analysis:
-
-1. **Customer Retention:** Focus on top 3 customers (46% of revenue)
-2. **Category Strategy:** Double down on Beverages, Dairy, Confections
-3. **Discount Optimization:** Shift from 15%+ to 1-10% discount range
-4. **Market Expansion:** Investigate 2015 revenue decline
-5. **Risk Mitigation:** Reduce dependency on single customer (19.7%)
+1. Customer Retention: Focus on top 3 customers (46% of revenue)
+2. Category Strategy: Double down on Beverages, Dairy, Confections
+3. Discount Optimization: Shift from 15%+ to 1-10% discount range
+4. Market Expansion: Investigate 2015 revenue decline
+5. Risk Mitigation: Reduce dependency on single customer (19.7%)
 
 ---
 
-## 👨‍💻 Author
+👨‍💻 Author
 
 **Prateeksha P Hegde**  
-Data Analyst | Azure Databricks Certified
+Data Analyst 
 
 📧 prateeksha.p.hegde@gmail.com  
-💼 [LinkedIn](https://linkedin.com/in/prateeksha-hegde)  
+💼 [LinkedIn]([https://linkedin.com/in/prateeksha-hegde](https://www.linkedin.com/in/prateeksha-hegde-680391224/))  
 💻 [GitHub](https://github.com/pratee-orangy)
-
----
-
-## 📜 License
-
-MIT License - Open Source
-
----
-
-**Built with:** Azure Databricks | SQL | Delta Lake | Power BI  
-**Dataset:** Northwind Traders (Microsoft sample database)  
-**Revenue Analyzed:** $1.27M | **Orders:** 830 | **Customers:** 89
