@@ -1,5 +1,5 @@
 
-Title : B2B Distribution Analytics
+Title : Commercial Analytics for FMCG Distribution.
 
 End-to-end analytics platform analyzing B2B food distribution data (830 orders, 89 customers, $1.27M revenue) using Azure Databricks and advanced SQL , Power BI
 
